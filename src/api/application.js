@@ -44,16 +44,3 @@ export async function updateApplicationStatus(token, { job_id }, status) {
     }
     return data;
 }
-export async function postJob(token, _, jobData) {
-    const supabase = await supabaseClient(token);
-    const { data, error } = await supabase
-        .from("jobs")
-        .insert([jobData])
-        .select();
-    ;
-    if (error) {
-        console.log(`Error on Creating Job: ${error.message}`);
-        return null;
-    }
-    return data;
-}
