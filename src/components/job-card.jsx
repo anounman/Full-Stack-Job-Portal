@@ -18,7 +18,8 @@ function JobCard({
   job,
   isMyJob = false,
   saveInit = false,
-  onJobSaved = () => {},
+  onJobAction = () => {},
+  onJobSaved = () => {}
 }) {
   const { user } = useUser();
   const [isSaved, setIsSaved] = useState(saveInit);
@@ -36,7 +37,7 @@ function JobCard({
 
   const handelDeleteJob = async () => {
     await deleteJobFn();
-    await saveJobFn();
+    onJobAction();
   };
   const handelSaveJob = async () => {
     await saveJobFn({
