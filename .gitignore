@@ -59,3 +59,4 @@ yarn-error.log*
 # Misc
 .DS_Store
 thumbs.db
+.vercel

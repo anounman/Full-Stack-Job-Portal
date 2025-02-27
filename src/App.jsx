@@ -1,6 +1,6 @@
 // filepath: /d:/Code/Web Devlopent/job_portal/src/App.jsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./app.css"; // Ensure Tailwind CSS is imported
+import "./App.css"; // Ensure Tailwind CSS is imported
 import ProtectedRoute from "./components/protected-route";
 import { ThemeProvider } from "./components/theme-provider";
 import AppLayout from "./layout/app-layout";
