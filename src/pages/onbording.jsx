@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 
-function Onbording() {
+function Onboarding() {
   const { user, isLoaded } = useUser();
   const navigateTo = useNavigate();
 
@@ -58,4 +58,4 @@ function Onbording() {
   );
 }
 
-export default Onbording;
+export default Onboarding;
