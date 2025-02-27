@@ -11,7 +11,6 @@ const supabaseClient = async (supabaseAccessToken) => {
             headers: {
                 Authorization: `Bearer ${supabaseAccessToken}`
             }
-
         }
     });
     return supbase
